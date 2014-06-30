@@ -1690,40 +1690,34 @@ body { min-height: 2000px; }
 
 .row { max-width: 2500px; width: 100%; padding: 0px; }
 
-.navbar { background: white; padding: 5px 0 0 10px; }
-
-.navbar.unfixed { height: 150px; -webkit-transition: height .5s; -moz-transition: height .5s; -ms-transition: height .5s; -o-transition: height .5s; transition: height .5s; }
-
-.navbar.fixed { height: 110px; -webkit-transition: height .5s; -moz-transition: height .5s; -ms-transition: height .5s; -o-transition: height .5s; transition: height .5s; -webkit-box-shadow: 0 4px 4px -2px #2d3140; -moz-box-shadow: 0 4px 4px -2px #2d3140; box-shadow: 0 4px 4px -2px #2d3140; }
-
-.navbar ul { float: left; height: 100%; }
-
-.navbar ul li { font-weight: 700; text-transform: uppercase; display: inline-block; position: relative; width: 100%; height: 100px; }
-
-.navbar ul li a { text-shadow: none; color: #2d3140; line-height: 125px; height: 100px; }
-
-.navbar.unfixed ul li a { font-size: 27px; -webkit-transition: font-size 0.5s; -moz-transition: font-size 0.5s; -o-transition: font-size 0.5s; -ms-transition: font-size 0.5s; }
-
-.navbar.fixed ul li a { font-size: 22px; -webkit-transition: font-size 0.5s; -moz-transition: font-size 0.5s; -o-transition: font-size 0.5s; -ms-transition: font-size 0.5s; }
-
-.navbar ul li a:before { content: ''; display: block; position: absolute; left: 0; bottom: 0; width: 100%; height: 0px; background: #2d3140; -webkit-transition: height .25s; -moz-transition: height .25s; -ms-transition: height .25s; -o-transition: height .25s; transition: height 0.25s; }
-
-.navbar.unfixed ul li.logo { height: 150px; -webkit-transition: height .5s; -moz-transition: height .5s; -ms-transition: height .5s; -o-transition: height .5s; transition: height 0.5s; }
-
-.navbar.unfixed ul li.logo a { height: 150px; -webkit-transition: height .5s; -moz-transition: height .5s; -ms-transition: height .5s; -o-transition: height .5s; transition: height 0.5s; }
-
-.navbar.fixed ul li.logo { height: 100px; -webkit-transition: height .5s; -moz-transition: height .5s; -ms-transition: height .5s; -o-transition: height .5s; transition: height 0.5s; }
-
-.navbar.fixed ul li.logo a { height: 100px; -webkit-transition: height .5s; -moz-transition: height .5s; -ms-transition: height .5s; -o-transition: height .5s; transition: height 0.5s; }
-
-.navbar ul li.logo a:hover:before { height: 0 !important; }
-
-.navbar ul li a:hover:before { height: 5px; }
-
-.navbar ul li:hover { background-color: rgba(255, 255, 255, 0) !important; }
-
-.navbar ul li:hover > a { background-color: rgba(255, 255, 255, 0) !important; }
-
+/* Non-mobile navbar styling */
+@media only screen and (min-width: 768px) { .mobile { display: none; }
+  .navbar { background: white; padding: 5px 0 0 10px; }
+  .navbar.unfixed { height: 150px; -webkit-transition: height .5s; -moz-transition: height .5s; -ms-transition: height .5s; -o-transition: height .5s; transition: height .5s; }
+  .navbar.fixed { height: 110px; -webkit-transition: height .5s; -moz-transition: height .5s; -ms-transition: height .5s; -o-transition: height .5s; transition: height .5s; -webkit-box-shadow: 0 4px 4px -2px #2d3140; -moz-box-shadow: 0 4px 4px -2px #2d3140; box-shadow: 0 4px 4px -2px #2d3140; }
+  .navbar ul { float: left; height: 100%; }
+  .navbar ul li { font-weight: 700; text-transform: uppercase; display: inline-block; position: relative; width: 100%; height: 100px; }
+  .navbar ul li a { text-shadow: none; color: #2d3140; line-height: 125px; height: 100px; }
+  .navbar.unfixed ul li a { font-size: 27px; -webkit-transition: font-size 0.5s; -moz-transition: font-size 0.5s; -o-transition: font-size 0.5s; -ms-transition: font-size 0.5s; }
+  .navbar.fixed ul li a { font-size: 22px; -webkit-transition: font-size 0.5s; -moz-transition: font-size 0.5s; -o-transition: font-size 0.5s; -ms-transition: font-size 0.5s; }
+  .navbar ul li a:before { content: ''; display: block; position: absolute; left: 0; bottom: 0; width: 100%; height: 0px; background: #2d3140; -webkit-transition: height .25s; -moz-transition: height .25s; -ms-transition: height .25s; -o-transition: height .25s; transition: height 0.25s; }
+  .navbar.unfixed ul li.logo { height: 150px; -webkit-transition: height .5s; -moz-transition: height .5s; -ms-transition: height .5s; -o-transition: height .5s; transition: height 0.5s; }
+  .navbar.unfixed ul li.logo a { height: 150px; -webkit-transition: height .5s; -moz-transition: height .5s; -ms-transition: height .5s; -o-transition: height .5s; transition: height 0.5s; }
+  .navbar.fixed ul li.logo { height: 100px; -webkit-transition: height .5s; -moz-transition: height .5s; -ms-transition: height .5s; -o-transition: height .5s; transition: height 0.5s; }
+  .navbar.fixed ul li.logo a { height: 100px; -webkit-transition: height .5s; -moz-transition: height .5s; -ms-transition: height .5s; -o-transition: height .5s; transition: height 0.5s; }
+  .navbar ul li.logo a:hover:before { height: 0 !important; }
+  .navbar ul li a:hover:before { height: 5px; }
+  .navbar ul li:hover { background-color: rgba(255, 255, 255, 0) !important; }
+  .navbar ul li:hover > a { background-color: rgba(255, 255, 255, 0) !important; } }
+/* Mobile navbar style */
+@media only screen and (max-width: 767px) { .non-mobile { display: none; }
+  .navbar { background: #2d3140; }
+  .navbar a.toggle { background: #2d3140; }
+  .navbar a.toggle.active { background: #2d3140; }
+  .navbar a.toggle:hover { background: #54638c; }
+  .navbar ul.active { background: #2d3140; -webkit-box-shadow: 0 2px 2px #2d3140; -moz-box-shadow: 0 2px 2px #2d3140; box-shadow: 0 2px 2px #2d3140; }
+  .navbar ul.active li a { text-shadow: none; font-weight: 700; text-transform: uppercase; }
+  .navbar ul.active li:hover > a { background: #54638c; } }
 .splash { background-image: url("../img/baltimore.jpg"); background-size: 100%; background-repeat: no-repeat; height: 500px; }
 
 .esl { padding: 20px 10px 10px 10px; }

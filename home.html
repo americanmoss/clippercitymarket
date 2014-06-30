@@ -42,23 +42,33 @@
 </head>
 
 <body>
-
-	<div class="row navbar unfixed" id="nav1" gumby-fixed="20">
-		<!-- Toggle for mobile navigation, targeting the <ul> -->
-		<a class="toggle" gumby-trigger="#nav1 > ul" href="#"><i class="icon-menu"></i></a>
-		<ul class="push_two two columns">
-			<li><a href="#">Home</a></li>
-		</ul>
-		<ul class="four columns logo-container">
-			<li class="logo">
-				<a href="#"><img src="/img/logo.png"></img></a>
-			</li>
-		</ul>
-		<ul class="two columns">
-			<li><a href="#">Contact</a></li>
-	  	</ul>
+	<div class="non-mobile">
+		<div class="row navbar unfixed" id="nav1" gumby-fixed="20">
+			<!-- Toggle for mobile navigation, targeting the <ul> -->
+			<a class="toggle" gumby-trigger="#nav1 > ul" href="#"><i class="icon-menu"></i></a>
+			<ul class="push_two two columns">
+				<li><a href="#">Home</a></li>
+			</ul>
+			<ul class="four columns logo-container">
+				<li class="logo">
+					<a href="#"><img src="/img/logo.png"></img></a>
+				</li>
+			</ul>
+			<ul class="two columns">
+				<li><a href="#">Contact</a></li>
+		  	</ul>
+		</div>
 	</div>
-
+	<div class="mobile">
+		<div class="row navbar unfixed" id="nav2" gumby-fixed="20">
+			<!-- Toggle for mobile navigation, targeting the <ul> -->
+			<a class="toggle" gumby-trigger="#nav2 > ul" href="#"><i class="icon-menu"></i></a>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Contact</a></li>
+		  	</ul>
+		</div>
+	</div>
 	<div class="splash">
 	</div>
 
