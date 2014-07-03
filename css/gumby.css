@@ -1696,6 +1696,7 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
   .navbar { height: 110px; margin-bottom: 0; -webkit-box-shadow: 0 4px 4px -2px #2d3140; -moz-box-shadow: 0 4px 4px -2px #2d3140; box-shadow: 0 4px 4px -2px #2d3140; }
   .navbar ul { float: left; height: 100%; }
   .navbar ul li { font-weight: 700; text-transform: uppercase; display: inline-block; position: relative; width: 100%; height: 100px; }
+  .navbar ul li.social { width: auto; }
   .navbar ul li a { text-shadow: none; color: #2d3140; line-height: 125px; height: 100px; }
   .navbar ul li a { font-size: 22px; -webkit-transition: font-size 0.5s; -moz-transition: font-size 0.5s; -o-transition: font-size 0.5s; -ms-transition: font-size 0.5s; }
   .navbar ul li a:before { content: ''; display: block; position: absolute; left: 0; bottom: 0; width: 100%; height: 0px; background: #2d3140; -webkit-transition: height .25s; -moz-transition: height .25s; -ms-transition: height .25s; -o-transition: height .25s; transition: height 0.25s; }
@@ -1714,7 +1715,7 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
   .navbar ul.active { background: #2d3140; -webkit-box-shadow: 0 2px 2px #2d3140; -moz-box-shadow: 0 2px 2px #2d3140; box-shadow: 0 2px 2px #2d3140; }
   .navbar ul.active li a { text-shadow: none; font-weight: 700; text-transform: uppercase; }
   .navbar ul.active li:hover > a { background: #54638c; } }
-.splash { background-image: url("../img/baltimore.jpg"); background-repeat: no-repeat; background-size: 25%; background-position: center center; height: 650px; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; }
+.splash { background-image: url("../img/baltimore.jpg"); background-repeat: no-repeat; background-position: center center; height: 650px; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; }
 
 div.copy { padding: 30px 40px !important; }
 

@@ -51,6 +51,10 @@ $op: rgba(255, 255, 255, 0);
 		height:100px;
 	}
 
+	.navbar ul li.social {
+		width:auto;
+	} 
+
 	.navbar ul li a {
 		text-shadow: none;
 		color: $blue;
@@ -80,6 +84,10 @@ $op: rgba(255, 255, 255, 0);
 		-ms-transition: height .25s;
 		-o-transition: height .25s;
 		transition: height .25s
+	}
+
+	.navbar ul li.social a:before {
+
 	}
 
 	.navbar ul li.logo {
@@ -153,7 +161,6 @@ $op: rgba(255, 255, 255, 0);
 .splash {
 	background-image: url('../img/baltimore.jpg');
 	background-repeat:no-repeat;
-	background-size:25%;
 	background-position: center center;
 	height:650px;
 	background-size:cover;
