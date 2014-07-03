@@ -6,14 +6,14 @@ $light-blue: #54638C;
 $op-white: rgba(255, 255, 255, 1);
 $op: rgba(255, 255, 255, 0);
 
-body {
-	min-height:2000px;
-}
-
 .row {
 	max-width: 2500px; 
 	width:100%;
 	padding:0px;
+}
+
+.container {
+	padding-top:110px;
 }
 
 /* Non-mobile navbar styling */
@@ -26,25 +26,12 @@ body {
 
 	.navbar {
 		background: $op-white;
-		padding: 5px 0 0 10px;
+		padding: 5px 0 5px 0;
 	}
 
-	.navbar.unfixed {
-		height:150px;
-		-webkit-transition: height .5s;
-		-moz-transition: height .5s;
-		-ms-transition: height .5s;
-		-o-transition: height .5s;
-		transition: height .5s;
-	}
-
-	.navbar.fixed {
+	.navbar {
 		height:110px;
-		-webkit-transition: height .5s;
-		-moz-transition: height .5s;
-		-ms-transition: height .5s;
-		-o-transition: height .5s;
-		transition: height .5s;
+		margin-bottom:0;
 		-webkit-box-shadow: 0 4px 4px -2px $blue;
 		-moz-box-shadow: 0 4px 4px -2px $blue;
 		box-shadow: 0 4px 4px -2px $blue;
@@ -71,15 +58,7 @@ body {
 		height: 100px;
 	}
 
-	.navbar.unfixed ul li a {
-		font-size:27px;
-		-webkit-transition: font-size 0.5s;
-		-moz-transition: font-size 0.5s;
-		-o-transition: font-size 0.5s;
-		-ms-transition: font-size 0.5s;
-	}
-
-	.navbar.fixed ul li a {
+	.navbar ul li a {
 		font-size:22px;
 		-webkit-transition: font-size 0.5s;
 		-moz-transition: font-size 0.5s;
@@ -103,41 +82,12 @@ body {
 		transition: height .25s
 	}
 
-
-	.navbar.unfixed ul li.logo {
-		height:150px;
-		-webkit-transition: height .5s;
-		-moz-transition: height .5s;
-		-ms-transition: height .5s;
-		-o-transition: height .5s;
-		transition: height .5s
-	}
-
-	.navbar.unfixed ul li.logo a {
-		height:150px;
-		-webkit-transition: height .5s;
-		-moz-transition: height .5s;
-		-ms-transition: height .5s;
-		-o-transition: height .5s;
-		transition: height .5s
-	}
-
-	.navbar.fixed ul li.logo {
+	.navbar ul li.logo {
 		height:100px;
-		-webkit-transition: height .5s;
-		-moz-transition: height .5s;
-		-ms-transition: height .5s;
-		-o-transition: height .5s;
-		transition: height .5s
 	}
 
-	.navbar.fixed ul li.logo a {
+	.navbar ul li.logo a {
 		height:100px;
-		-webkit-transition: height .5s;
-		-moz-transition: height .5s;
-		-ms-transition: height .5s;
-		-o-transition: height .5s;
-		transition: height .5s
 	}
 
 	.navbar ul li.logo a:hover:before {
@@ -198,16 +148,52 @@ body {
 	.navbar ul.active li:hover > a {
 		background:$light-blue;
 	}
-
 }
 
 .splash {
 	background-image: url('../img/baltimore.jpg');
-	background-size:100%;
 	background-repeat:no-repeat;
-	height:500px;
+	background-size:25%;
+	background-position: center center;
+	height:650px;
+	background-size:cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+div.copy {
+	padding:30px 40px !important;
 }
 
 .esl {
-	padding:20px 10px 10px 10px;
+	padding:10px;
+}
+
+.esl p {
+	text-align: justify;
+	padding:10px;
+}
+
+div.overlay h2 {
+	margin-top:100px;
+	background: rgba(45, 49, 64, 0.85) !important;
+	color:white !important;
+	text-transform:uppercase !important;
+}
+
+div.overlay h3 {
+	margin-top:100px;
+	background: rgba(45, 49, 64, 0.85) !important;
+	color:white !important;
+	text-transform:uppercase !important;
+}
+
+div.overlay h5 {
+	margin-top:100px;
+	padding:30px;
+	font-weight:600 !important;
+	background: rgba(45, 49, 64, 0.85) !important;
+	color:white !important;
+	text-align: center;
 }
